@@ -4,7 +4,7 @@ def join_nested_strings(src)
   
   total = 0
   row_index = 0
-  string_array = []
+  string_array = " "
   
   while row_index < src.count do
   
@@ -13,7 +13,7 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do
       
       if src[row_index][element_index].is_a? String
-        string_array << src[row_index][element_index]
+        string_array += src[row_index][element_index]
       end
       
       element_index += 1
